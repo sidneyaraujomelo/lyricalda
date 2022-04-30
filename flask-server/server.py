@@ -4,7 +4,7 @@ import lyricsgenius
 
 app = Flask(__name__)
 
-token="Zxn7Q9TdWN2zG7w7i77_nAxnOTEZ9_ZDlPE_rO2xkp2Mu-M0Dyc_BW0FCtZy7Ea4"
+token = open("token.txt", "r+").read()
 genius = lyricsgenius.Genius(token)
 
 artist_id = 32137
